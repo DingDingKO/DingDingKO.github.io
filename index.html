@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+      
+    <title>Text to HTML Colour Converter</title>
+    
+    <meta charset="utf-8">
+    <meta name="keywords" content="Text to Colour Converter, Hexcode Colours, CSS Colours, Text To Colour, Text, To, Colour, Converter, HTML colours, Text to Color Converter, Hexcode Colors, CSS Colors, Text To Color, Color, Illegal numbers, Illegal colours,Illegal colors">
+    <meta name="description" content="A website that converts text into Hexadecimal values which are displayed as colours">
+    <meta name="author" content="Mathew Cao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+    <script src="myscript.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129661044-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129661044-1');
+</script>
+
+
+    
+    <style type="text/css">
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+        textarea {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    wrap: hard;
+}
+
+.container{
+    width: 90%;
+    position: relative; 
+    
+}
+
+    </style>
+
+  </head>
+  
+
+  <body>
+      
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Text to Colour Converter</a> 
+        
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about" data-toggle="collapse">About</a></li>
+            
+            </ul>
+        </div>
+      </div>
+    </nav>
+      
+     <!-- Page Content -->
+    <div class="container">
+    	<h1>Text to Colour Converter</h1>
+        <div id="about" class="collapse">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="lead">This tool converts text into a Hexadecimal value, which is then displayed as a series of HTML colours. This can be a way to package information in a different way (See <a href="https://en.wikipedia.org/wiki/Illegal_number"> Illegal numbers</a>)</p>
+                <ul class="list-unstyled">
+                        <li>(Note. As HTML colours consist of 6 digit hexadecimals, incomplete                               hexadecimals are rounded with ‘0’s to the nearest colour.)</li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container"  >
+
+      <div class="panel panel-primary class" >
+          
+        <div class="panel-heading">Try it out</div>
+            <div class="panel-body">
+              <div class="input-group">
+                <input id= 'txtOutput' type="text" class="form-control" placeholder="Enter text here..." onkeypress="handleKeyPress(event)">
+                <div class="input-group-btn">
+                  <input type="submit" value="Submit" class="btn btn-primary" onclick="Click()">
+                </div>
+              </div>
+              <br/>
+              
+               <table id="mytable" align="center"  height = 180px width= 100%>
+               <textarea id="ColoursForShow" disabled></textarea>
+               </table>
+               </br>
+              
+              
+              
+                     
+            </div>
+            
+        </div>
+      
+    </div>
+    
+
+     <footer id = „footer“ class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright &copy; 2018 Mathew Cao</p>
+      </div>
+      
+    </footer>
+     
+     
+     
+  </body>
+  
+  
+</html>
